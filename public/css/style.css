@@ -1,0 +1,121 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --green:#8fe069;
+    --blackGreen:#55aa2e;
+}
+
+li{    
+    list-style-type: none;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+/*header*/
+
+header{
+    height: 5rem;
+    background: var(--green);
+}
+
+header nav ul{
+    display: flex;
+    margin-left: 10%;
+}
+
+header li{    
+    margin-top: 1.5rem;
+    padding: 0  3rem;
+}
+
+header a{    
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3rem;
+}
+header a:hover{
+    text-decoration: underline;
+}
+header input[type="text"]{
+    border: none;
+    border-radius: 10px 0 0 10px;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    margin-top: -0.2rem;
+    color: var(--blackGreen);
+}
+header input[type="submit"]{
+    border:none ;
+    color: #fff;
+    background-color: var(--blackGreen);
+    border-radius: 0 10px 10px 0;
+    padding: 0.5rem 1rem;
+    padding-left: 1.1rem;
+    font-size: 1.1rem;
+    margin-top: -0.2rem;
+    margin-left: -0.25rem;
+    
+}
+
+.user{
+    display: flex;
+    margin:3rem 3rem 4rem;
+}
+h1{
+    color: var(--blackGreen);
+}
+.lien-unfollow{
+    height: 1rem;
+    margin-left: 2rem;
+    margin-top: 0.6rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+    background: var(--blackGreen);
+    padding: 1.2rem;
+}
+.lien-follow{
+    height: 1rem;
+    margin-left: 2rem;
+    margin-top: 0.6rem;
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+    background: var(--green);
+    padding: 1.2rem;
+}
+
+audio{
+    /* position: fixed; */
+    background: var(--green);
+    margin-left: 3.7rem;
+    margin-bottom: 4rem;
+    transform: scale(1.1);
+}
+
+audio::-webkit-media-controls-panel{
+    background-color: var(--green);
+} 
+
+
+audio::-webkit-media-controls-play-button{
+    color: white;
+}
+audio::-webkit-media-controls-time-remaining-display{
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+audio::-webkit-media-controls-current-time-display{
+    color: white;  
+    font-weight: bold;
+    font-size: 1rem;
+}
+audio::-webkit-media-controls-timeline{
+    color: #fff;
+}
